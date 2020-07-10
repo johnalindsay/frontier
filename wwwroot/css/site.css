@@ -1,0 +1,195 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}*/
+
+/* Provide sufficient contrast against white background */
+/*a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {*/
+    /* Margin bottom by footer height */
+    /*margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;*/ /* Vertically center the text there */
+}
+
+
+/*Added*/
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Roboto, Helvetica, Arial, sans-serif
+}
+
+article {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 100px minmax(auto,auto) 150px;
+    
+}
+
+
+header {
+    grid-area: header;
+    background-color: #006643;
+    color: #fff;
+    grid-template-columns: 1% 98% 1%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    color: #006643;
+}
+
+h3 {
+    display: block;
+    font-size: 1.5em;
+    color: #006643;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #006643;
+    color: #fff;
+    grid-template-columns: 1% 98% 1%;
+    grid-template-rows: 5% 90% 5%;
+}
+
+.grid {
+    display: grid;
+}
+
+.title-container {
+    grid-column-start: 2;
+    align-self: auto
+}
+
+#home-content {
+    grid-row-gap: 25px;
+    grid-template-rows: 10px 100px auto;
+}
+
+#account-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-start: 3;
+    height: 1000px;
+}
+
+.account-column {
+    grid-template-rows: 2em repeat(2, 10em);
+
+}
+
+.content-title-container {
+    justify-self: center;
+    height: 1em;
+    grid-row-start: 2;
+}
+
+#overdue-account-container-title > h3 {
+    color: #B22222;
+}
+
+#inactive-account-container-title > h3 {
+    color: #808080;
+}
+
+.account-container {
+    justify-self: center;
+    height: 5em
+    
+}
+
+.account-container-title {
+    justify-self: center;
+}
+
+.account-data-list {
+    list-style: none;
+}
+
+    .account-data-list > li {
+        margin: 10px 0;
+    }
+
+        .account-data-list > li > label {
+            font-weight: bold;
+            margin: 0 5px 0 0;
+        }
+
+.copy {
+    align-self: end;
+    justify-self: end;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}

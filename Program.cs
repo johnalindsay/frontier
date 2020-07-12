@@ -26,14 +26,6 @@ namespace WebApplication2
 
         private static async Task<List<UserAccounts>> GetDataFromREST() 
         {
-            //RESTClient.DefaultRequestHeaders.Accept.Clear();
-            //RESTClient.DefaultRequestHeaders.Accept.Add(
-            //    new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-            //RESTClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-
-            //var stringTask = RESTClient.GetStringAsync("https://frontiercodingtests.azurewebsites.net/api/accounts/getall");
-            //var msg = await stringTask;
-
             var streamTask = RESTClient.GetStreamAsync("https://frontiercodingtests.azurewebsites.net/api/accounts/getall");
             var customers = await JsonSerializer.DeserializeAsync<List<UserAccounts>>(await streamTask);
             return customers;

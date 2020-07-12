@@ -12,8 +12,6 @@ namespace WebApplication2
 {
     public class UserAccounts
     {
-        //private DateTimeOffset _PaymentDueDate = DateTimeOffset.MinValue;
-
         [JsonPropertyName("Id")]
         public int Id { get; set; }
         
